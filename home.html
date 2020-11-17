@@ -1,0 +1,148 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<meta charset="utf-8">   
+<title>Example of Employee Table with twitter bootstrap</title>   
+<meta name="description" content="Creating a Employee table with Twitter Bootstrap. Learn with example of a Employee Table with Twitter Bootstrap.">  
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>  
+<body style="margin:20px auto">  
+<div class="container">
+<div class="row header" style="text-align:center;color:green">
+
+    <h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Add User +</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container"  style="text-align:left;">
+      <label for="uname"><b>First Name *</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Password">
+
+      <label ><b>Email ID</b></label>
+      <input type="text" placeholder="Enter Password">
+
+      <label ><b>Employee ID</b></label>
+      <input type="text" placeholder="Enter Password">
+        
+      <div >  <button style="margin-left: 40%;" >Add</button> </div>
+    </div>
+
+    <div  style="background-color:#f1f1f1">
+      
+    </div>
+  </form>
+</div>
+
+</div>
+<table id="myTable" class="table table-striped" >  
+        <thead>  
+          <tr>  
+            <th>ENO</th>  
+            <th>EMPName</th>  
+            <th>Country</th>  
+            <th>Salary</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td>001</td>  
+            <td>Anusha</td>  
+            <td>India</td>  
+            <td>10000</td>  
+          </tr>  
+          <tr>  
+            <td>002</td>  
+            <td>Charles</td>  
+            <td>United Kingdom</td>  
+            <td>28000</td>  
+          </tr>  
+          <tr>  
+            <td>003</td>  
+            <td>Sravani</td>  
+            <td>Australia</td>  
+            <td>7000</td>  
+          </tr>  
+		   <tr>  
+            <td>004</td>  
+            <td>Amar</td>  
+            <td>India</td>  
+            <td>18000</td>  
+          </tr>  
+          <tr>  
+            <td>005</td>  
+            <td>Lakshmi</td>  
+            <td>India</td>  
+            <td>12000</td>  
+          </tr>  
+          <tr>  
+            <td>006</td>  
+            <td>James</td>  
+            <td>Canada</td>  
+            <td>50000</td>  
+          </tr>  
+		  
+		   <tr>  
+            <td>007</td>  
+            <td>Ronald</td>  
+            <td>US</td>  
+            <td>75000</td>  
+          </tr>  
+          <tr>  
+            <td>008</td>  
+            <td>Mike</td>  
+            <td>Belgium</td>  
+            <td>100000</td>  
+          </tr>  
+          <tr>  
+            <td>009</td>  
+            <td>Andrew</td>  
+            <td>Argentina</td>  
+            <td>45000</td>  
+          </tr>  
+		  
+		    <tr>  
+            <td>010</td>  
+            <td>Stephen</td>  
+            <td>Austria</td>  
+            <td>30000</td>  
+          </tr>  
+          <tr>  
+            <td>011</td>  
+            <td>Sara</td>  
+            <td>China</td>  
+            <td>750000</td>  
+          </tr>  
+          <tr>  
+            <td>012</td>  
+            <td>JonRoot</td>  
+            <td>Argentina</td>  
+            <td>65000</td>  
+          </tr>  
+        </tbody>  
+      </table>  
+	  </div>
+</body>  
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+</html>  
